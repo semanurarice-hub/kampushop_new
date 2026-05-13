@@ -1,0 +1,24 @@
+/* Genel Sayfa Düzeni */
+body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; }
+.main-container { display: flex; max-width: 1000px; margin: 40px auto; gap: 20px; padding: 0 20px; }
+
+/* Sol Taraf: Sepet Özeti */
+.cart-summary { flex: 1; background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.cart-item { display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #ccc; }
+.total-section { font-size: 1.2rem; font-weight: bold; text-align: right; margin-top: 20px; color: #2ecc71; }
+
+/* Sağ Taraf: Ödeme Formu */
+.checkout-container { flex: 1.2; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: 600; }
+input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+.row { display: flex; gap: 10px; }
+
+/* Buton */
+#purchase-btn { width: 100%; padding: 15px; background-color: #3498db; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+#purchase-btn:hover { background-color: #2980b9; }
+
+.hidden { display: none; }
+.success-msg { background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; text-align: center; }
+
+@media (max-width: 768px) { .main-container { flex-direction: column; } }
